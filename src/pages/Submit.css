@@ -1,0 +1,198 @@
+p {
+    line-height: 20px;
+}
+h2 {
+    font-family: Helvetica, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 30px;    
+}
+h6 {
+    font-family: Helvetica, sans-serif;
+    font-weight: lighter;
+}
+
+
+@media (max-width: 1024px) {
+    #submit-container {
+        display: flex;
+        flex-direction: row;
+        font-family: Helvetica, sans-serif;
+        margin-left: 100px;
+        margin-right: 100px;
+        text-indent: 0;
+        flex-wrap: wrap;
+        align-content: center;
+    
+    }
+    .submit-writing {
+        text-indent: 0;
+        display: flex;
+        flex-direction: column;
+        line-height: 15px;
+        gap: 0px;
+        min-width: 400px;
+        margin-left: 80px;
+
+    
+    }
+    .image-stack img:nth-child(4) {
+        width: 40px;
+        height: 50px;
+        left: 30px;
+        top: -30px;
+    
+      }
+      .image-stack img:nth-child(1) {
+        width: 200px;
+        left: 80px;
+        z-index: 1;
+        top: 200px;
+      }
+      /* Slight overlap */
+
+      .image-stack img:nth-child(2) {
+        width: 200px;
+        left: 230px !important;
+        top: 150px;
+        z-index: 2;
+      }
+      .image-stack img:nth-child(3) {
+        width: 200px;
+        left: 120px !important;
+        top: -20px;
+        z-index: 1;
+      }
+      
+      /* On hover, spread them out */
+      .image-stack:hover img:nth-child(1) {
+        width: 200px;
+        left: 60px!important;
+        z-index: 1;
+        top: 210px;
+      }
+      .image-stack:hover img:nth-child(2) {
+        width: 200px;
+        left: 240px!important;
+        top: 150px;
+        z-index: 2;
+      }
+      /* this is top img lol */
+      .image-stack:hover img:nth-child(3) { 
+        width: 200px;
+        left: 120px!important;
+        top: -50px;
+        z-index: 1;
+      }
+
+  }
+
+#caption {
+    /* margin-top: 100px; */
+    font-size: larger;
+}
+#submit-container {
+    display: flex;
+    flex-direction: row;
+    font-family: Helvetica, sans-serif;
+    margin-left: 200px;
+    margin-right: 200px;
+    text-indent: 0;
+    /* flex-wrap: wrap; */
+    justify-content: center;
+    
+    
+
+}
+.submit-writing {
+    text-indent: 0;
+    display: flex;
+    flex-direction: column;
+    margin-right: 100px;
+    line-height: 15px;
+    gap: 0px;
+    min-width: 300px;
+
+}
+
+.images-section {
+    min-width: 500px;
+    min-width: 400px;
+    margin-right: 0px;
+    min-height: 600px;
+}
+
+.image-stack {
+    position: relative;
+    /* width: fit-content; */
+    display: flex;
+  }
+  
+  .image-stack img {
+    position: absolute;
+    transition: all 0.3s ease;
+  }
+  .image-stack img:nth-child(0) {
+    width: 10px;
+    height: 20px;
+    left: 20px;
+
+  }
+  .image-stack img:nth-child(1) {
+    width: 200px;
+    left: 100px;
+    z-index: 1;
+    top: 200px;
+  }
+  /* Slight overlap */
+
+  #italics {
+    font-family: Helvetica, sans-serif;
+    font-style: italic;
+  }
+  #red {
+    font-family: Helvetica, sans-serif;
+    color: #C71919;
+  }
+  .image-stack img:nth-child(4) {
+    width: 40px;
+    height: 50px;
+    left: 80px;
+    top: -30px;
+
+  }
+
+  .image-stack img:nth-child(2) {
+    width: 200px;
+    left: 270px;
+    top: 150px;
+    z-index: 2;
+  }
+  .image-stack img:nth-child(3) {
+    width: 200px;
+    left: 160px;
+    top: -20px;
+    z-index: 1;
+  }
+  
+  /* On hover, spread them out */
+  .image-stack:hover img:nth-child(1) {
+    width: 200px;
+    left: 100px;
+    z-index: 1;
+    top: 210px;
+  }
+  .image-stack:hover img:nth-child(2) {
+    width: 200px;
+    left: 300px;
+    top: 150px;
+    z-index: 2;
+  }
+  /* this is top img lol */
+  .image-stack:hover img:nth-child(3) { 
+    width: 200px;
+    left: 160px;
+    top: -50px;
+    z-index: 1;
+  }
+  
