@@ -1,0 +1,106 @@
+html, main {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.issues-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 200px;
+    width: 100%;
+    padding: 0;
+    box-sizing: border-box;
+} 
+
+#latest-issue-header {
+    color: #C71919;
+    font-size: 3rem;
+    margin-top: 5rem;
+    text-align: center;
+    font-weight: 600;
+}
+
+hr {
+    width: 100%;
+    border-top: 1px solid black;
+}
+
+.latest-issue {
+    position: relative;
+    margin: 2rem auto;
+    perspective: 1000px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 6rem;
+}
+
+.main-cover {
+    width: 100%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+}
+
+.main-cover:hover {
+    transform: rotateY(20deg);
+}
+
+.download-link {
+    display: inline-block;
+    margin: 1rem 0;
+    color: #000;
+    text-decoration: underline;
+    font-size: 1.2rem;
+}
+
+.issues-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin: 10%;
+}
+
+.issue-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.issue-item img {
+    width: 100%;
+    max-width: 250px;
+    transition: transform 0.3s ease;
+}
+
+.issue-item:hover span {
+    font-weight: bold;
+    transition: transform 0.3s ease;
+}
+
+.issue-item:hover img {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.issue-item span {
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .issues-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .issues-grid {
+        grid-template-columns: 1fr;
+    }
+}
