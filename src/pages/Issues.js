@@ -6,6 +6,7 @@ const Issues = () => {
     return (
         <main>
             <Header />
+
             <div className="issues-container">
                 <span id="latest-issue-header">LATEST ISSUE</span>
                 <div className="latest-issue">
